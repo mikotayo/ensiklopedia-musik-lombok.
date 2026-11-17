@@ -1,0 +1,165 @@
+
+/* AUDIO SECTION */
+.audio-section {
+    padding: 80px 8%;
+    background: #f5ead9;
+    min-height: 80vh;
+}
+
+.audio-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.audio-heading span {
+    color: #c58b3c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.audio-heading h1 {
+    color: #174b3d;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.audio-heading p {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* AUDIO GRID */
+.audio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* AUDIO CARD */
+.audio-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.audio-card:hover {
+    transform: translateY(-5px);
+}
+
+.audio-card h3 {
+    color: #174b3d;
+    margin-bottom: 10px;
+}
+
+.audio-card p {
+    color: #777;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.audio-card audio {
+    width: 100%;
+}
+
+/* STATUS AUDIO */
+.audio-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.available {
+    background: #e0f2e8;
+    color: #176b43;
+}
+
+.pending {
+    background: #fff1d8;
+    color: #a36a13;
+}
+
+.audio-pending {
+    background: #f8f5ef;
+    padding: 15px;
+    border-radius: 10px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .audio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audio-heading h1 {
+        font-size: 27px;
+    }
+
+    .audio-section {
+        padding: 50px 6%;
+    }
+}
+
+
+/* HAMBURGER MENU */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
+
+    .navbar .container {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+}

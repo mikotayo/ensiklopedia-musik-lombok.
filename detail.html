@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detail Alat Musik - Lombok Musik</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                LOMBOK<span>MUSIK.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="katalog.html">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="audio.html">Audio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kuis.html">Kuis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- DETAIL ALAT MUSIK -->
+    <section class="detail-section">
+
+        <div class="container">
+
+            <a href="index.html#katalog" class="back-link">
+                ← Kembali ke Katalog
+            </a>
+
+            <div id="detailContent">
+
+                <div class="row g-5 align-items-start">
+
+                    <div class="col-lg-5">
+                        <img id="detailImage"
+                            src=""
+                            alt=""
+                            class="detail-image">
+                    </div>
+
+                    <div class="col-lg-7">
+
+                        <span class="detail-label" id="detailCategory"></span>
+
+                        <h1 id="detailName"></h1>
+
+                        <p class="detail-intro" id="detailDescription"></p>
+
+                        <hr>
+
+                        <h3>Sejarah dan Asal-Usul</h3>
+                        <p id="detailHistory"></p>
+
+                        <h3>Fungsi Alat Musik</h3>
+                        <p id="detailFunction"></p>
+
+                        <h3>Cara Memainkan</h3>
+                        <p id="detailHowToPlay"></p>
+
+                        <div class="detail-note">
+                            <strong>Keunikan:</strong>
+                            <span id="detailUniqueness"></span>
+                        </div>
+
+                        <!-- AUDIO -->
+                        <div class="multimedia-box">
+
+                            <h3 id="audioTitle">🎵 Dengarkan Suara</h3>
+
+                            <p id="audioDescription">
+                                Dengarkan suara alat musik tradisional Lombok.
+                            </p>
+
+                            <audio id="detailAudio"
+                                controls
+                                preload="metadata"
+                                style="width:100%; display:none;">
+
+                                Browser Anda tidak mendukung pemutar audio.
+
+                            </audio>
+
+                            <p id="audioUnavailable" style="display:none;">
+                                Audio untuk alat musik ini belum tersedia.
+                            </p>
+
+                        </div>
+
+                        <!-- VIDEO -->
+                        <div class="multimedia-box">
+
+                            <h3 id="videoTitle">🎬 Video Pertunjukan</h3>
+
+                            <p id="videoDescription">
+                                Saksikan dokumentasi pertunjukan alat musik tradisional.
+                            </p>
+
+                            <video id="detailVideo"
+                                controls
+                                preload="metadata"
+                                width="100%"
+                                style="display:none;">
+
+                                Browser Anda tidak mendukung pemutar video.
+
+                            </video>
+
+                            <p id="videoUnavailable" style="display:none;">
+                                Video untuk alat musik ini belum tersedia.
+                            </p>
+
+                        </div>
+
+                        <a href="index.html#katalog"
+                            class="detail-button mt-4">
+                            Kembali ke Katalog
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="detailNotFound" style="display:none;">
+
+                <h2>Alat Musik Tidak Ditemukan</h2>
+
+                <p>
+                    Data alat musik yang Anda cari belum tersedia.
+                </p>
+
+                <a href="index.html#katalog" class="detail-button">
+                    Kembali ke Katalog
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h4>LOMBOK<span>MUSIK.</span></h4>
+
+            <p>
+                Ensiklopedia Interaktif Alat Musik Tradisional Lombok
+            </p>
+
+            <div class="footer-line"></div>
+
+            <small>
+                © 2026 Ensiklopedia Musik Tradisional Lombok.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audio Musik Tradisional Lombok</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/audio.css">
+
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            LOMBOK<span>MUSIK.</span>
+        </a>
+
+        <!-- TOMBOL HAMBURGER -->
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka menu navigasi"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- MENU NAVIGASI -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kuis.html">Kuis</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+    <!-- AUDIO SECTION -->
+    <section class="audio-section">
+
+        <div class="audio-heading">
+
+            <span>JELAJAHI SUARA BUDAYA</span>
+
+            <h1>Audio Musik Tradisional Lombok</h1>
+
+            <p>
+                Dengarkan keunikan suara alat musik tradisional
+                masyarakat Sasak sebagai bagian dari warisan
+                budaya Lombok.
+            </p>
+
+        </div>
+
+
+        <div class="audio-grid">
+
+            <!-- AUDIO GENDANG BELEQ -->
+            <div class="audio-card">
+
+                <span class="audio-status available">
+                    Audio Tersedia
+                </span>
+
+                <h3>Gendang Beleq</h3>
+
+                <p>
+                    Dengarkan suara khas Gendang Beleq,
+                    alat musik tradisional berukuran besar
+                    yang dimainkan secara berkelompok.
+                </p>
+
+                <audio controls preload="metadata">
+                    <source
+                        src="assets/audio/gendang-beleq.mp3"
+                        type="audio/mpeg">
+
+                    Browser Anda tidak mendukung pemutar audio.
+                </audio>
+
+            </div>
+
+
+
+            <!-- AUDIO GENGGONG -->
+            <div class="audio-card">
+
+                <span class="audio-status available">
+                    Audio Tersedia
+                </span>
+
+                <h3>Genggong</h3>
+
+                <p>
+                    Genggong merupakan alat musik tradisional
+                    khas masyarakat Sasak yang memiliki
+                    karakteristik suara unik.
+                </p>
+
+                <audio controls preload="metadata">
+                    <source src="assets/audio/genggong.mp3"
+                            type="audio/mpeg">
+                    Browser Anda tidak mendukung pemutar audio.
+                </audio>
+
+            </div>
+
+
+
+
+            <!-- AUDIO REBANA -->
+            <div class="audio-card">
+
+                <span class="audio-status available">
+                    Audio Tersedia
+                </span>
+
+                <h3>Rebana</h3>
+
+                <p>
+                    Rebana merupakan alat musik perkusi
+                    tradisional yang dimainkan dengan cara
+                    dipukul untuk menghasilkan irama.
+                </p>
+
+                <audio controls preload="metadata">
+                    <source src="assets/audio/rebana.mp3"
+                            type="audio/mpeg">
+                    Browser Anda tidak mendukung pemutar audio.
+                </audio>
+
+            </div>
+
+
+
+
+            <!-- AUDIO SERUNAI -->
+            <div class="audio-card">
+
+                <span class="audio-status available">
+                    Audio Tersedia
+                </span>
+
+                <h3>Serunai</h3>
+
+                <p>
+                    Serunai merupakan alat musik tiup
+                    tradisional yang memiliki karakteristik
+                    bunyi khas masyarakat Lombok.
+                </p>
+
+                <audio controls preload="metadata">
+                    <source src="assets/audio/serunai.mp3"
+                            type="audio/mpeg">
+                    Browser Anda tidak mendukung pemutar audio.
+                </audio>
+
+            </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer style="background:#123f34;color:white;text-align:center;padding:25px;">
+
+        <h3>LOMBOK MUSIK.</h3>
+
+        <p>Ensiklopedia Interaktif Musik Tradisional Lombok</p>
+
+    </footer>
+
+
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+
+        const isOpen = navLinks.classList.contains("active");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+</script>
+
+
+</body>
+</html>

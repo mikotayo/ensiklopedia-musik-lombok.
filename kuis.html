@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kuis Musik Tradisional Lombok</title>
+
+    <!-- CSS UTAMA -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS KHUSUS KUIS -->
+    <link rel="stylesheet" href="css/kuis.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                LOMBOK<span>MUSIK.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kuis.html">Kuis</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- KUIS SECTION -->
+    <section class="quiz-section">
+
+        <div class="quiz-heading">
+
+            <span>UJI PENGETAHUAN BUDAYA</span>
+
+            <h1>Kuis Musik Tradisional Lombok</h1>
+
+            <p>
+                Seberapa jauh kamu mengenal alat musik tradisional
+                masyarakat Sasak? Uji pengetahuanmu melalui kuis berikut!
+            </p>
+
+        </div>
+
+
+        <!-- KONTEN KUIS -->
+        <div class="quiz-container" id="quizContainer">
+
+            <div class="quiz-top">
+                <span id="questionNumber">Pertanyaan 1 dari 10</span>
+                <span id="scoreDisplay">Skor: 0</span>
+            </div>
+
+            <!-- PROGRESS -->
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <!-- PERTANYAAN -->
+            <h2 class="question" id="questionText">
+                Memuat pertanyaan...
+            </h2>
+
+            <!-- PILIHAN JAWABAN -->
+            <div class="answer-list" id="answerList">
+            </div>
+
+            <!-- TOMBOL LANJUT -->
+            <div class="quiz-footer">
+
+                <button
+                    class="quiz-next"
+                    id="nextButton"
+                    disabled>
+
+                    Pertanyaan Selanjutnya
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer style="background:#123f34;color:white;text-align:center;padding:25px;">
+
+        <h3>LOMBOK MUSIK.</h3>
+
+        <p>Ensiklopedia Interaktif Musik Tradisional Lombok</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT KUIS -->
+    <script src="js/quiz.js"></script>
+
+</body>
+</html>

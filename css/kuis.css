@@ -1,0 +1,211 @@
+
+/* ==============================
+   HALAMAN KUIS MUSIK LOMBOK
+============================== */
+
+.quiz-section {
+    padding: 70px 8%;
+    background: #f5ead9;
+    min-height: 80vh;
+}
+
+.quiz-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.quiz-heading span {
+    color: #c58b3c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.quiz-heading h1 {
+    color: #174b3d;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.quiz-heading p {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* KARTU KUIS */
+
+.quiz-container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #174b3d;
+    font-weight: bold;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+    width: 100%;
+    height: 9px;
+    background: #eee;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #c58b3c;
+    transition: 0.3s;
+}
+
+/* PERTANYAAN */
+
+.question {
+    color: #174b3d;
+    font-size: 21px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* PILIHAN JAWABAN */
+
+.answer-list {
+    display: grid;
+    gap: 13px;
+}
+
+.answer-btn {
+    width: 100%;
+    padding: 15px 18px;
+    text-align: left;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    background: white;
+    color: #444;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer-btn:hover:not(:disabled) {
+    border-color: #c58b3c;
+    background: #fffaf1;
+}
+
+.answer-btn.correct {
+    background: #e0f2e8;
+    border-color: #27945d;
+    color: #176b43;
+}
+
+.answer-btn.wrong {
+    background: #fde8e7;
+    border-color: #d9534f;
+    color: #b52b27;
+}
+
+.answer-btn:disabled {
+    cursor: default;
+}
+
+/* TOMBOL LANJUT */
+
+.quiz-footer {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.quiz-next {
+    background: #174b3d;
+    color: white;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.quiz-next:hover {
+    background: #23634f;
+}
+
+.quiz-next:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* HASIL KUIS */
+
+.quiz-result {
+    text-align: center;
+}
+
+.quiz-result h2 {
+    color: #174b3d;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.quiz-score {
+    color: #c58b3c;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.quiz-result p {
+    color: #777;
+    line-height: 1.8;
+}
+
+.quiz-restart {
+    margin-top: 25px;
+    background: #c58b3c;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quiz-restart:hover {
+    background: #a9762e;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .quiz-section {
+        padding: 50px 6%;
+    }
+
+    .quiz-heading h1 {
+        font-size: 27px;
+    }
+
+    .quiz-container {
+        padding: 22px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+
+    .quiz-top {
+        font-size: 13px;
+    }
+}

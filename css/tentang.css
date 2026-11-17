@@ -1,0 +1,243 @@
+
+/* =========================
+   HALAMAN TENTANG
+========================= */
+
+.about-section {
+    background: #f5ead9;
+    padding: 80px 8%;
+}
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.about-heading span {
+    color: #c58b3c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-heading h1 {
+    color: #174b3d;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.about-heading p {
+    color: #777;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* KONTEN TENTANG */
+
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.about-card h2 {
+    color: #174b3d;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #777;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+/* DAFTAR ALAT MUSIK */
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-item {
+    background: #f8f5ef;
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #c58b3c;
+    transition: 0.3s;
+}
+
+.about-item:hover {
+    transform: translateY(-4px);
+}
+
+.about-item h3 {
+    color: #174b3d;
+    margin-bottom: 8px;
+}
+
+.about-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* TOMBOL JELAJAHI */
+
+.about-cta {
+    background: #174b3d;
+    color: white;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.about-cta h2 {
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.about-cta p {
+    color: #eee;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #c58b3c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background: #a9762e;
+    transform: translateY(-3px);
+}
+
+.about-button.secondary {
+    background: white;
+    color: #174b3d;
+}
+
+.about-button.secondary:hover {
+    background: #f1e5d2;
+}
+
+/* FOOTER */
+
+.about-footer {
+    background: #123f34;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.about-footer h3 {
+    margin-bottom: 8px;
+}
+
+.about-footer p {
+    margin: 0;
+}
+
+/* HAMBURGER MENU */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 50px 6%;
+    }
+
+    .about-heading h1 {
+        font-size: 27px;
+    }
+
+    .about-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 22px;
+    }
+
+    .about-cta h2 {
+        font-size: 21px;
+    }
+
+    /* NAVBAR MOBILE */
+
+    .navbar .container {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        width: 100%;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+        padding: 12px 5px;
+    }
+
+}
